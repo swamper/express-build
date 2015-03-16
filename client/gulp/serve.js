@@ -13,7 +13,8 @@ gulp.task('serve', ['build'], function() {
     };
 
     browserSync({
-        server: ".tmp"
+        server: ".tmp",
+        port: 9000
     });
 
     gulp.watch(src.app, ['less', 'scripts', 'html', 'images', 'fonts']);

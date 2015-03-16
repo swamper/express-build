@@ -12,6 +12,8 @@ This app was built from the following generator:
 
 Evolutionary step in my boot-build app. This connects boot-build to an express server. The express server can be run in development and production modes. The server and the build app are seperate. Only the 'server' folder needs to be deployed after building the app.
 
+You don't need a server installed to run the app or deploy it has it's own.
+
 ## Installation
 
 The files inside the 'client' folder ARE my boot-build app files minus apache-server-configs. Any commands that can be run by boot-build can be run inside the 'client' folder. See the 'readme' inside the 'client' folder.
@@ -20,7 +22,7 @@ Clone the repo on Github: 'git clone https://github.com/swamper/express-build.gi
 
 Install Node dependencies in the 'client' and 'server' folders BOTH: 'npm install'
 
-Install Bower dependencies in the 'client' and 'server' folders BOTH: 'bower install'
+Install Bower dependencies in the 'client' folder: 'bower install'
 
 Starting the server:
 
@@ -28,7 +30,7 @@ Open two command line windows. One inside of 'client' and one inside of 'server'
 
 In the 'client' window run '$ gulp serve' and to start it on localhost:9000. Close that browser tab, you don't need it.
 
-In the 'server' window run '$ npm test' and your express server will begin running on localhost:3000. Open that up in a web browser and you should see the same Yeoman welcome page that your gulp serve method gave you. The difference is... THIS one is being served by your express server!
+In the 'server' window run '$ npm test' and your express server will begin running on localhost:3000. Open that up in a web browser and you should see the same page that your gulp serve method gave you. The difference is... THIS one is being served by your express server!
 
 Make it Production Ready:
 
@@ -38,7 +40,7 @@ Next, in your client tab, run:
 
 $ gulp --force
 
-And Yeoman will optimize/jshint/minify your client side code, CSS, images, etc, and put the fresh version in your server/dist directory. To test it out go to your server tab and run
+And it will optimize/jshint/minify your client side code, CSS, images, etc, and put the fresh version in your server/public directory. To test it out go to your server tab and run
 
 $ npm start
 
