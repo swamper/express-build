@@ -4,9 +4,7 @@ A gulp webapp running on ExpressJS.
 
 The idea and part of the instructions are taken from [Building an Angular and Express App Part 1](http://start.jcolemorrison.com/building-an-angular-and-express-app-part-1/).
 
-This app was built from the following generators:
-
-[gulp-webapp](https://github.com/yeoman/generator-gulp-webapp) built by the Yeoman Team.
+This app was built from the following generator:
 
 [express-generator](https://github.com/expressjs/generator) by ExpressJS.
 
