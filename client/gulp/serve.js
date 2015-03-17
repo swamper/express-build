@@ -1,5 +1,4 @@
 /*global -$ */
-'use strict';
 
 var gulp = require('gulp'),
     path = require('path'),
@@ -8,13 +7,14 @@ var gulp = require('gulp'),
 
 gulp.task('serve', ['build'], function() {
 
+    'use strict';
+
     var src = {
         app: ('app/styles/**/*.less', 'app/*.html', 'app/js/**/*.js', 'app/img/**.*', 'app/fonts/**.*')
     };
 
     browserSync({
-        server: ".tmp",
-        port: 9000
+        server: ".tmp"
     });
 
     gulp.watch(src.app, ['less', 'scripts', 'html', 'images', 'fonts']);
