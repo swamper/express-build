@@ -10,6 +10,6 @@ gulp.task('build', ['copy', 'less', 'html', 'scripts', 'images', 'fonts'], funct
         .pipe($.size({
             title: 'build',
             gzip: true
-        }))
+        }));
         .pipe(gulp.dest('../server/public'));
 });
